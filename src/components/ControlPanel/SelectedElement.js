@@ -36,8 +36,9 @@ const SelectedElement = ({ item, element }) => {
             return (
               <div key={id}>
                 <Image
-                  src={image}
-                  width={"90rem"}
+                  src={`/${image}`}
+                  width={90}
+                  height={60}
                   onClick={() => setElemenetDetails({id:id,name:name,image:image, path:path})}
                 />
               </div>
