@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useDynamicElement } from "../../../context";
 import { ElectronicsApplianceTVAudioVideo } from "../../../data/elements";
 
@@ -33,8 +34,8 @@ const SelectedElement = ({ item, element }) => {
         <div className="selected-element-icon-container">
           {item.data.map(({ id, name, image, path }) => {
             return (
-              <div>
-                <img
+              <div key={id}>
+                <Image
                   src={image}
                   width={"90rem"}
                   onClick={() => setElemenetDetails({id:id,name:name,image:image, path:path})}
