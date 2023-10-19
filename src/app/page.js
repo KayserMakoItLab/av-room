@@ -60,8 +60,8 @@ export default function Home() {
             position={[0, -1.75, 0]}
             rotation={[-Math.PI / 2, 0, 0]}
           />
-          <TransformControlConfig />
-          <AdditionalAppliance />
+          {/* <TransformControlConfig /> */}
+          {/* <AdditionalAppliance /> */}
           {/* <Grid position={[0, 0, 0]} args={[200, 200]} cellSize={0.1} /> */}
         </Canvas>
       </Suspense>
